@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .example {
+            color: blue; /* Class selector */
+        }
+        #unique {
+            color: green; /* ID selector */
+        }
+        p {
+            color: red; /* Element selector */
+        }
+    </style>
+</head>
+<body>
+    <h1>Q4: Explain CSS Specificity</h1>
+
+    <h2>CSS specificity is a set of rules that determines which CSS styles are applied to an element when there are conflicting styles. </h2>
+
+    <h4>Like if we using class and id for a same element then the Questions comes which one will work mainly it's will follow the rule of css  specificity  </h4>
+
+    <li> Universal Selector  (lowest power)</li>
+    <li>Element Selector (like p or h1)</li>
+    <li>Class Selector, Attribute Selector, and Pseudo-class
+    </li>
+    <li> ID Selector</li>
+    <li> Inline Styles</li>
+    <li> !important Rule</li>
+
+    <h3>So , Inline styles and !important are the most powerful.
+        IDs come next, followed by classes, attributes, and pseudo-classes.
+        Element selectors and the universal selector have the lowest specificity.</h3>
+</body>
+</html>

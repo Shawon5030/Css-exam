@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the navigation menu */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #ff4500;
+            border-bottom: 2px solid black;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            background-color: #ff4500;
+        }
+        nav ul li a:hover {
+            background-color: #000;
+        }
+        nav ul ul {
+            display: none; /* Hide submenus initially */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ff4500;
+        }
+        nav ul ul ul {
+            left: 100%; /* Show the next level to the right */
+            top: 0;
+        }
+        nav ul li:hover > ul {
+            display: block; /* Show submenu on hover */
+        }
+        nav ul ul li {
+            display: block;
+            width: 150px;
+        }
+    </style>
+    <title>Multi-Level Dropdown Menu</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">WordPress</a>
+            <ul>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Tutorials</a>
+                    <ul>
+                        <li><a href="#">Stuff</a></li>
+                        <li><a href="#">Things</a></li>
+                        <li><a href="#">Other Stuff</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

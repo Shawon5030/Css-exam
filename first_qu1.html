@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+    </style>
+    <title>Flexbox Example</title>
+</head>
+<body>
+    <h1> Q1: What is axis in CSS Flexbox? Explain with an example.
+    </h1>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h1 style="text-align: center;">Answer</h1>
+
+    <h3 style="text-align: justify;font-size: 20px;">Axis is nothing but a dimensions in flex there are two dimensions  one is main axis another is cross axis. </h3>
+    <h4 style="text-align: justify; font-size: 20px;">
+        By default, the main axis runs horizontally but we can control it using flex-direction property ,  When flex-direction is row or row-reverse, the main axis is horizontal. and cross axis is vertical <br> <br>
+        When flex-direction is column or column-reverse, the main axis is vertical and cross axis is horizontal
+    </h4>
+</body>
+</html>

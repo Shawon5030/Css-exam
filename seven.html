@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+    .login_page{
+        display: flex;
+        width: 25vw;
+        height: 75vh;
+        background-color: #797777;
+        justify-content: center;
+        align-items: center;
+        margin: 10%  auto;
+        border: 2px solid #ddd;
+    }
+    .devoloper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    h1{
+        justify-self: center;
+        align-items: center;
+        margin: 30px auto;
+
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        color: black;
+
+
+    }
+    input , button{
+        padding: 8px 15px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(232, 224, 224);
+        border-radius: 5px 5px 5px 5px;
+        color: black;
+
+    }
+    h4{
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    @media screen and (max-width: 700px) {
+
+
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+
+    }
+    .login_page{
+        display: flex;
+        width: 70vw;
+        height: 60vh;
+        background-color: #797777;
+        justify-content: center;
+        align-items: center;
+        margin: 43% auto;
+        border: 2px solid #ddd;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-image: url(image/pngtree-eye-scan-a-3d-rendered-illustration.png)
+    }
+
+
+
+    input{
+        margin-bottom: 4px;
+    }
+
+    h4{
+        margin-bottom: 5px;
+    }
+
+    }
+</style>
+<body>
+    <div class="login_page">
+        <div class="devoloper">
+            <h1>
+                Foolish Devoloper
+            </h1>
+            <div class="input">
+                <input type="text" placeholder="Email id">
+                <input type="text" placeholder="Password">
+                <button type="button">Login</button>
+            </div>
+            <h4>or</h4>
+            <div class="socal_media">
+                <button type="button">Facebook</button>
+                <button type="button">Google</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

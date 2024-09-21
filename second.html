@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .multiple-bg {
+            width: 300px;
+            height: 300px;
+            background-image:
+                url('https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg'),
+                url('https://images.pexels.com/photos/1496372/pexels-photo-1496372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-position: center, top left; /* First image centered, second image top-left */
+            background-size: 100px 100px, 200px 200px; /* Adjust sizes */
+            background-repeat: no-repeat, no-repeat;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Multiple Background Example</title>
+</head>
+<body>
+    <h1>
+        Q2: Can I use multiple CSS Background images in a div? Explain with an example.</h1>
+    <div class="multiple-bg"></div>
+    <p></p>
+        Yes, you can use multiple CSS background images in a div. This example demonstrates two images, each with its own position and size. The first image is centered and has a size of 100px by 100px, while the second image is placed top-left with a size of 200px by 200px. The border around the div is also visible to demonstrate the added styling.
+    </p>
+</body>
+</html>

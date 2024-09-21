@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #2d2f3e;
+        color: #fff;
+        padding: 50px;
+    }
+
+    .timeline {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #555;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+    }
+
+    .timeline-item {
+        padding: 20px;
+        position: relative;
+        width: 50%;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 20px;
+        left: -42px;
+    }
+
+
+    .timeline-content {
+        background-color: #3a3d52;
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 297px;
+    }
+
+    .timeline-content h3 {
+        margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
+
+    .timeline-content .time {
+        font-size: 12px;
+        color: #ccc;
+        margin-top: 10px;
+        display: block;
+    }
+
+    /* Color classes */
+
+
+    /* For positioning timeline items on both sides */
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 297px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #2d2f3e;
+        color: #fff;
+        padding: 50px;
+    }
+</style>
+
+<body>
+    <div class="timeline">
+        <div class="timeline-item primary">
+            <div class="timeline-icon">
+
+            </div>
+            <div class="timeline-content">
+                <h3 style="color: blue;">Primary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam eaum ipsa
+                    fugit veniam suscipit.</p>
+                <span class="time">1 Hour Ago</span>
+            </div>
+        </div>
+
+        <div class="timeline-item danger">
+            <div class="timeline-icon">
+
+            </div>
+            <div class="timeline-content">
+                <h3 style="color: rgb(231, 22, 22);">Danger</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam eaum ipsa
+                    fugit veniam suscipit.</p>
+                <span class="time">2 Hours Ago</span>
+            </div>
+        </div>
+
+        <div class="timeline-item success">
+            <div class="timeline-icon">
+
+            </div>
+            <div class="timeline-content">
+                <h3 style="color: rgb(227, 12, 187);">Success</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam eaum ipsa
+                    fugit veniam suscipit.</p>
+                <span class="time">6 Hours Ago</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
